@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyMart POS System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>DailyMart POS</h1>
+</header>
+
+<div class="container">
+
+    <!-- Product List -->
+    <section class="products">
+        <h2>Products</h2>
+        <div id="productList" class="grid"></div>
+    </section>
+
+    <!-- Cart -->
+    <section class="cart">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th><th>Qty</th><th>Price</th><th>Total</th><th></th>
+                </tr>
+            </thead>
+            <tbody id="cartItems"></tbody>
+        </table>
+
+        <div class="bill-box">
+            <p>Subtotal: <span id="subtotal">0.00</span></p>
+            <p>Tax (5%): <span id="tax">0.00</span></p>
+            <h3>Grand Total: <span id="total">0.00</span></h3>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </section>
+
+    <!-- CRUD Section -->
+    <section class="crud">
+        <h2>Manage Products</h2>
+
+        <input type="text" id="pname" placeholder="Product Name">
+        <input type="number" id="pprice" placeholder="Price">
+        <button onclick="addProduct()">Add Product</button>
+
+        <h3>Product List</h3>
+        <ul id="productCRUD"></ul>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

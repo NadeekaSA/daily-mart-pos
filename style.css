@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    color: #222;
+}
+
+header {
+    background: #0077cc;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1.5fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card button {
+    margin-top: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart table {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+}
+
+.cart table th, td {
+    padding: 7px;
+    text-align: center;
+}
+
+.bill-box {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+#checkoutBtn {
+    width: 100%;
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.crud input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.crud button {
+    width: 100%;
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
