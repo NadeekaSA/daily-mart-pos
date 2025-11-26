@@ -93,7 +93,7 @@ LocalStorage (for CRUD & order storage)
 
 Download or clone this repository:
 
-git clone https://github.com/yourusername/dailymart-pos.git
+git clone (https://github.com/NadeekaSA/daily-mart-pos)
 
 
 Navigate into the project folder:
